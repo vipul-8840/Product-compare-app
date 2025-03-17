@@ -8,14 +8,13 @@ const { Title } = Typography;
 
 export const ProductContext = createContext();
 
-// Lazy load components
 const ProductDetails = lazy(() => import("./components/ProductDetails"));
 const CompareProducts = lazy(() => import("./components/CompareProducts"));
 
 const App = () => {
   const [compareList, setCompareList] = useState([]);
   const [productList, setProductList] = useState([]);
-  const [menuKey, setMenuKey] = useState("1"); // Track active menu key for toggle effect
+  const [menuKey, setMenuKey] = useState("1"); 
 
   const handleMenuClick = ({ key }) => {
     setMenuKey(key);
