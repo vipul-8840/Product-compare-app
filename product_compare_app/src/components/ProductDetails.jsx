@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import { Table, Button, Alert } from "antd";
+import { Table, Button } from "antd";
 import { useNavigate } from "react-router-dom";
 import "antd/dist/reset.css";
 import { ProductContext } from "../App";
